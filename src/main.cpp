@@ -11,8 +11,8 @@
 void Print_Help() {
 	std::cout << "Usage:" << std::endl;
 	std::cout << "\tcdrawing <in-file> <out-file> <dimensions>" << std::endl << std::endl;
-	std::cout << "\t<in-file>\t\t- Input file with drawing commands" << std::endl;
-	std::cout << "\t<out-file>\t\t- Output file (<filename>.[svg|pgm])" << std::endl;
+	std::cout << "\t<in-file>\t- Input file with drawing commands" << std::endl;
+	std::cout << "\t<out-file>\t- Output file (<filename>.[svg|pgm])" << std::endl;
 	std::cout << "\t<dimensions>\t- Context dimensions (<width>x<height>)" << std::endl;
 }
 

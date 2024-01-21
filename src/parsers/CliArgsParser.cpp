@@ -38,12 +38,15 @@ CliArgsParser::Result::DrawerType CliArgsParser::Parse_Drawer_Type(const std::st
 std::pair<size_t, size_t> CliArgsParser::Parse_Dimensions(const char *dimensions) {
 	std::istringstream isstream{dimensions};
 
-	size_t width, height;
+	long long width, height;
 	char delimiter;
 	isstream >> width >> delimiter >> height;
 
 	if (!isstream || delimiter != kDelimiter_Dimensions) {
 		throw std::invalid_argument{"Invalid Dimensions Format"};
+	}
+	if (width <= 0 || height <= 0) {
+		throw std::invalid_argument{"Invalid Dimensions"};
 	}
 
 	return {width, height};
