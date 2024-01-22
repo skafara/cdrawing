@@ -1,5 +1,7 @@
 #include "Raster.hpp"
 
+#include <algorithm>
+
 
 Raster::Raster(size_t width, size_t height) : _width(width), _height(height) {
 	_pixels.resize(height);

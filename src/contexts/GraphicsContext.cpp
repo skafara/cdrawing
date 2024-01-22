@@ -1,5 +1,7 @@
 #include "GraphicsContext.hpp"
 
+#include <algorithm>
+
 
 GraphicsContext &GraphicsContext::operator<<(std::vector<t_Cmd> cmds) {
 	std::ranges::for_each(cmds, [this] (const t_Cmd &cmd) {

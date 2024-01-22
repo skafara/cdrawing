@@ -1,5 +1,7 @@
 #include "SvgContext.hpp"
 
+#include <algorithm>
+
 
 SvgContext::SvgContext(size_t width, size_t height) : GraphicsContext(width, height) {
 	//

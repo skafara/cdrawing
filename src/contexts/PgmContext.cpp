@@ -1,6 +1,8 @@
 #include "PgmContext.hpp"
 #include "Raster.hpp"
 
+#include <algorithm>
+
 
 const std::map<Color, const size_t> PgmContext::kSymbols{
 		{Color::kWhite, 1},
