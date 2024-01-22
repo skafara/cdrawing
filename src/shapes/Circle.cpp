@@ -1,6 +1,8 @@
 #include "Circle.hpp"
 #include "Transformer.hpp"
 
+#include <cmath>
+
 
 Circle::Circle(const t_Point2D &center, t_Precision radius) : _center(center), _radius(radius) {
 	//

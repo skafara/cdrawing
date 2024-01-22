@@ -1,6 +1,8 @@
 #include "Line.hpp"
 #include "Transformer.hpp"
 
+#include <cmath>
+
 
 Line::Line(const t_Point2D &begin, const t_Point2D &end) : _begin(begin), _end(end) {
 	//
