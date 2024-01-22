@@ -3,6 +3,8 @@
 #include "I_Shape.hpp"
 #include "Line.hpp"
 
+#include <array>
+
 
 /**
  * Rectangle
