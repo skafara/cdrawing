@@ -1,6 +1,8 @@
 #include "Rectangle.hpp"
 #include "Transformer.hpp"
 
+#include <algorithm>
+
 
 Rectangle::Rectangle(const t_Point2D &top_left, t_Precision width, t_Precision height) :
 	_top_left(top_left),
